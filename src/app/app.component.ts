@@ -13,7 +13,7 @@ export class AppComponent {
   obj = {
     a: 1, b: {c: 2}
     };
-
+number2 = 2131321313213132;
   img = 'https://reactjs.org/logo-og.png'
 
   constructor() {
