@@ -1,15 +1,8 @@
-<h1>{{ title }}</h1>
-<p><strong>{{ number - 100 }}</strong></p>
-<p>{{arr}}</p>
+<h1>Hello Angular!</h1>
+<button (click)="toggle = !toggle">Toggle</button>
 
-<p>{{obj.a}}</p>
-<p>{{30 + 4}}</p>
-<p>{{'Hello Joobh'}}</p>
-<app-post></app-post>
-<app-post></app-post>
-<!--<ads></ads>-->
-<!--<app-post2></app-post2>-->
-<!--<app-post3></app-post3>-->
-<!--<app-post4></app-post4>-->
 
-<img src="{{img}}" alt="img">
+<p *ngIf="toggle; else blueP" class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, soluta.</p>
+<ng-template #blueP>
+<p  class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, suscipit.</p>
+</ng-template>
