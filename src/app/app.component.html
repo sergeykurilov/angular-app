@@ -1,8 +1,6 @@
 <h1>Hello Angular!</h1>
-<button (click)="toggle = !toggle">Toggle</button>
 
+<p>
+  {{now | date:'long1' | lowercase}}
+</p>
 
-<p *ngIf="toggle; else blueP" class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, soluta.</p>
-<ng-template #blueP>
-<p  class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, suscipit.</p>
-</ng-template>

@@ -8,8 +8,7 @@ import {timeout} from 'rxjs/operators';
 })
 export class AppComponent {
 
-  toggle = false;
-
+  now = new Date()
 
   }
 
